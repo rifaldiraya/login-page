@@ -18,8 +18,10 @@
   font-size: 20px;
 }
 
-.label {
-  color: #0065b3;
+.title-forgot {
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
 }
 
 .form-border {
@@ -41,12 +43,22 @@
 
 .btn-login {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   font-family: "Raleway SemiBold", sans-serif;
 }
 
 .create-account {
   color: #0065b3;
-  padding-top: 10px;
+  padding-top: 5px;
+  font-size: 12px;
   text-align: center;
+}
+
+/*Change Password Page*/
+
+.content-forgot {
+  text-align: center;
+  color: #d2c9ca;
+  padding-top: 20px;
+  font-size: 12px
 }

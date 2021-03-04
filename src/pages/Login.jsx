@@ -7,10 +7,21 @@ class Login extends Component {
     return (
       <div>
         <div className="box">
-          <div style={{ textAlign: "center", paddingBottom: '10px'}}>
-            <img style={{ width: "10vw" }} src="/img/dnet.png" alt="dnet" />
+          <div style={{ textAlign: "center", paddingBottom: "10px" }}>
+            <img
+              style={{ width: "10vw", paddingBottom: "10px" }}
+              src="/img/dnet.png"
+              alt="dnet"
+            />
           </div>
-          <Card hoverable style={{ borderRadius: "20px", width: 300, border: "-webkit-linear-gradient(right, #0065B3, green)"}}>
+          <Card
+            hoverable
+            style={{
+              borderRadius: "20px",
+              width: 300,
+              border: "-webkit-linear-gradient(right, #0065B3, green)",
+            }}
+          >
             <div className="card-data">
               <div className="title">
                 <span
@@ -22,26 +33,40 @@ class Login extends Component {
                   LOGIN
                 </span>
               </div>
-              <Divider plain style={{ color: "#0065B3" }}>
-                D~Net
+              <Divider plain style={{ color: "#D2C9CA" }}>
+                d~net
               </Divider>
               <div className="input-section">
-                <label htmlFor="email">Email</label>
+                <label
+                  style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
+                  htmlFor="email"
+                >
+                  Email
+                </label>
                 <br />
-                <AutoComplete style={{ width: "100%" }} placeholder="Email" />
+                <AutoComplete style={{ width: "100%" }} placeholder="" />
                 <div class="form-border"></div>
                 <br />
-                <label htmlFor="password">Password</label>
+                <label
+                  style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
+                  htmlFor="password"
+                >
+                  Password
+                </label>
                 <Input.Password
                   style={{ border: "none" }}
-                  placeholder="Password"
+                  placeholder=""
                   iconRender={(visible) =>
                     visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                   }
                 />
                 <div class="form-border"></div>
                 <div className="forgot-password">
-                  <span style={{ color: "#0065B3" }}>Forgot Password</span>
+                  <a href="/changepassword">
+                    <span style={{ fontSize: "12px", color: "#0065B3" }}>
+                      Forgot Password
+                    </span>
+                  </a>
                 </div>
               </div>
               <div className="btn-login">
