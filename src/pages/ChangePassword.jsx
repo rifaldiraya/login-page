@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Divider, AutoComplete, Input, Button } from "antd";
+import { Card, Divider, Input, Button } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
 function ChangePassword() {
