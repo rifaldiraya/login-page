@@ -47,18 +47,28 @@ function ChangePassword() {
               >
                 New Password
               </label>
-              <br />
-              <AutoComplete style={{ width: "100%" }} placeholder="" />
+              <Input.Password
+                style={{ border: "none" }}
+                placeholder=""
+                iconRender={(visible) =>
+                  visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
+                }
+              />
               <div class="form-border"></div>
               <br />
               <label
                 style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
-                htmlFor="confirm-new-password"
+                htmlFor="confirm-password"
               >
                 Confirm Password
               </label>
-              <br />
-              <AutoComplete style={{ width: "100%" }} placeholder="" />
+              <Input.Password
+                style={{ border: "none" }}
+                placeholder=""
+                iconRender={(visible) =>
+                  visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
+                }
+              />
               <div class="form-border"></div>
               <br />
               <label
@@ -97,7 +107,7 @@ function ChangePassword() {
               <br />
             </div>
             <div className="create-account">
-              <span>send new verification code</span>
+              <span>Send new verification code</span>
             </div>
           </div>
         </Card>

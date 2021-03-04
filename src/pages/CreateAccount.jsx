@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, Divider, AutoComplete, Input, Button } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
-class Login extends Component {
-  render() {
-    return (
+function CreateAccount() {
+  return (
+    <div>
       <div>
         <div className="box">
           <div style={{ textAlign: "center", paddingBottom: "10px" }}>
@@ -23,18 +23,17 @@ class Login extends Component {
             }}
           >
             <div className="card-data">
-              <div className="title">
+              <div className="title-forgot">
                 <span
                   style={{
-                    fontWeight: "bold",
                     color: "#0065B3",
                   }}
                 >
-                  LOGIN
+                  Create new account
                 </span>
               </div>
               <Divider plain style={{ color: "#D2C9CA" }}>
-                login for DWP applications
+                d~net
               </Divider>
               <div className="input-section">
                 <label
@@ -61,40 +60,49 @@ class Login extends Component {
                   }
                 />
                 <div class="form-border"></div>
-                <div className="forgot-password">
-                  <a href="/changepassword">
-                    <span style={{ fontSize: "12px", color: "#0065B3" }}>
-                      Forgot Password?
-                    </span>
-                  </a>
-                </div>
               </div>
               <div className="btn-login">
-                <Button
-                  type="primary"
-                  style={{
-                    width: "50%",
-                    border: "none",
-                    background:
-                      "-webkit-linear-gradient(right, #0065B3, #01AEF0)",
-                  }}
-                  shape="round"
-                  size="large"
-                >
-                  LOGIN
-                </Button>
-              </div>
-              <div className="create-account">
-                <a href="/create">
-                  <span>doesn't have an account?</span>
+                <a href="/login">
+                  <Button
+                    type="primary"
+                    style={{
+                      width: "50%",
+                      border: "none",
+                      fontSize: "12px",
+                      paddingBottom: "10px",
+                      background:
+                        "-webkit-linear-gradient(right, #0065B3, #01AEF0)",
+                    }}
+                    shape="round"
+                    size="large"
+                  >
+                    Create Account
+                  </Button>
                 </a>
+                <br />
+              </div>
+              <div className="content-forgot">
+                <span>by clikcing "Create Account" I agree to </span>
+                <span style={{ color: "#0065B1" }}>Terms of Service </span>
+                <span>
+                  and
+                  <span style={{ color: "#0065B1" }}> Privacy Policy</span>
+                </span>
+                <br />
+                <br />
+                <span>Already have an account?</span>
+                <div className="create-account">
+                  <a href="/login">
+                    <span>Sign In</span>
+                  </a>
+                </div>
               </div>
             </div>
           </Card>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-export default Login;
+export default CreateAccount;
