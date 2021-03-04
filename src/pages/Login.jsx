@@ -18,7 +18,7 @@ class Login extends Component {
             hoverable
             style={{
               borderRadius: "20px",
-              width: 300,
+              width: 320,
               border: "-webkit-linear-gradient(right, #0065B3, green)",
             }}
           >
@@ -45,7 +45,7 @@ class Login extends Component {
                 </label>
                 <br />
                 <AutoComplete style={{ width: "100%" }} placeholder="" />
-                <div class="form-border"></div>
+                <div className="form-border"></div>
                 <br />
                 <label
                   style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
@@ -60,7 +60,7 @@ class Login extends Component {
                     visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                   }
                 />
-                <div class="form-border"></div>
+                <div className="form-border"></div>
                 <div className="forgot-password">
                   <a href="/changepassword">
                     <span style={{ fontSize: "12px", color: "#0065B3" }}>

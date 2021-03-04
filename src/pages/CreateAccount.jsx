@@ -18,7 +18,7 @@ function CreateAccount() {
             hoverable
             style={{
               borderRadius: "20px",
-              width: 300,
+              width: 320,
               border: "-webkit-linear-gradient(right, #0065B3, green)",
             }}
           >
