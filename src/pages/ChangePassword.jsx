@@ -107,7 +107,7 @@ function ChangePassword() {
               <br />
             </div>
             <div className="create-account">
-              <span>Send new verification code</span>
+              <span>send new verification code</span>
             </div>
           </div>
         </Card>

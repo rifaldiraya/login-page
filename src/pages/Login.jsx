@@ -81,12 +81,12 @@ class Login extends Component {
                   shape="round"
                   size="large"
                 >
-                  LOGIN
+                  Login
                 </Button>
               </div>
               <div className="create-account">
                 <a href="/create">
-                  <span>doesn't have an account?</span>
+                  <span>Doesn't have an account?</span>
                 </a>
               </div>
             </div>

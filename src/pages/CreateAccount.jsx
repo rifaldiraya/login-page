@@ -67,6 +67,7 @@ function CreateAccount() {
                     type="primary"
                     style={{
                       width: "50%",
+                      textAlign: "center",
                       border: "none",
                       fontSize: "12px",
                       paddingBottom: "10px",
@@ -82,7 +83,7 @@ function CreateAccount() {
                 <br />
               </div>
               <div className="content-forgot">
-                <span>by clikcing "Create Account" I agree to </span>
+                <span>By clikcing "Create Account" I agree to </span>
                 <span style={{ color: "#0065B1" }}>Terms of Service </span>
                 <span>
                   and
