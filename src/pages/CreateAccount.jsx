@@ -44,7 +44,7 @@ function CreateAccount() {
                 </label>
                 <br />
                 <AutoComplete style={{ width: "100%" }} placeholder="" />
-                <div class="form-border"></div>
+                <div className="form-border"></div>
                 <br />
                 <label
                   style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
@@ -59,7 +59,7 @@ function CreateAccount() {
                     visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                   }
                 />
-                <div class="form-border"></div>
+                <div className="form-border"></div>
               </div>
               <div className="btn-login">
                 <a href="/login">

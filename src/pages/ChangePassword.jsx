@@ -54,7 +54,7 @@ function ChangePassword() {
                   visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                 }
               />
-              <div class="form-border"></div>
+              <div className="form-border"></div>
               <br />
               <label
                 style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
@@ -69,7 +69,7 @@ function ChangePassword() {
                   visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                 }
               />
-              <div class="form-border"></div>
+              <div className="form-border"></div>
               <br />
               <label
                 style={{ fontSize: "12px", fontFamily: "Raleway SemiBold" }}
@@ -84,7 +84,7 @@ function ChangePassword() {
                   visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />
                 }
               />
-              <div class="form-border"></div>
+              <div className="form-border"></div>
             </div>
             <div className="btn-login">
               <a href="/login">
