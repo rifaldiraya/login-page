@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Divider, Input, Button } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
@@ -87,7 +88,7 @@ function ChangePassword() {
               <div className="form-border"></div>
             </div>
             <div className="btn-login">
-              <a href="/login">
+              <Link to="/login">
                 <Button
                   type="primary"
                   style={{
@@ -103,7 +104,7 @@ function ChangePassword() {
                 >
                   Reset Password
                 </Button>
-              </a>
+              </Link>
               <br />
             </div>
             <div className="create-account">
@@ -112,9 +113,9 @@ function ChangePassword() {
             <div className="content-forgot">
               <span>Already have an account?</span>
               <div className="create-account">
-                <a href="/login">
+                <Link to="/login">
                   <span>Sign In</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

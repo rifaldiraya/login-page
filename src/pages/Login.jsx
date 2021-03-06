@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Card, Divider, AutoComplete, Input, Button } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
@@ -62,11 +63,11 @@ class Login extends Component {
                 />
                 <div className="form-border"></div>
                 <div className="forgot-password">
-                  <a href="/changepassword">
+                  <Link to="/changepassword">
                     <span style={{ fontSize: "12px", color: "#0065B3" }}>
                       Forgot Password?
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="btn-login">
@@ -85,9 +86,9 @@ class Login extends Component {
                 </Button>
               </div>
               <div className="create-account">
-                <a href="/create">
+                <Link to="/create">
                   <span>Doesn't have an account?</span>
-                </a>
+                </Link>
               </div>
             </div>
           </Card>

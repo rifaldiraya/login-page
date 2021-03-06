@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Divider, AutoComplete, Input, Button } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 
@@ -62,7 +63,7 @@ function CreateAccount() {
                 <div className="form-border"></div>
               </div>
               <div className="btn-login">
-                <a href="/login">
+                <Link to="/login">
                   <Button
                     type="primary"
                     style={{
@@ -79,7 +80,7 @@ function CreateAccount() {
                   >
                     Create Account
                   </Button>
-                </a>
+                </Link>
                 <br />
               </div>
               <div className="content-forgot">
@@ -93,9 +94,9 @@ function CreateAccount() {
                 <br />
                 <span>Already have an account?</span>
                 <div className="create-account">
-                  <a href="/login">
+                  <Link to="/login">
                     <span>Sign In</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
